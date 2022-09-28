@@ -21,23 +21,25 @@ class App
             // return false 
         }
 
+        // TODO:: scar esto de aqui 
+        // ------------------------------
         require_once $fileController;
-        $controllerName = ucfirst($url[0]) . 'Controller';
-        $modelName = $url[0] . 'Montroller';
-
-        $controller =  new $controllerName;
-        $controller->loadModel($modelName);
+        $controller = ucfirst($url[0]) . 'Controller';
+        $model = $url[0] . 'Model';
+        $controller =  new $controller();
+        // ------------------------------
+        $controller->loadModel($model);
 
         //No hay metodo a cargar
         $method = isset($url[1]) ? $url[1] : null;
         if (is_null($method)) {
-            $controller->render();
+            $controller->loadView();
             return;
         }
 
         //No existe el metodo en la clase
         if (method_exists($controller, $method)) {
-            $controller->render();
+            $controller->loadView();
             return;
         }
 
@@ -55,17 +57,20 @@ class App
         for ($i = 0; $i < $numOfParams; $i++) {
             array_push($paramList, $url[$i] + 2);
         }
+
         $controller->{$method}($paramList);
     }
 
     private function redirectLogin()
     {
-        error_log("APP::constructor=>No controller especified");
+        error_log("APP::constructor=>Controller not especified");
 
         $fileController = 'controllers/loginController.php';
+
         require_once $fileController;
+
         $controller = new LoginController();
-        // $controller->loadModel('login');
-        // $controller->render();    
+        $controller->loadModel('login');
+        $controller->loadView();    
     }
 }
