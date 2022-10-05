@@ -1,1 +1,129 @@
-
+[05-Oct-2022 18:03:13 Europe/Berlin] APP::constructor=>No existe el controlador especificado
+[05-Oct-2022 18:03:13 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[05-Oct-2022 18:03:13 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:03:13 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:32:18 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:32:18 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:32:18 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:32:18 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:32:32 Europe/Berlin] APP::constructor=>No existe el controlador especificado
+[05-Oct-2022 18:32:32 Europe/Berlin] ERROR::CONSTRUCT=>Errors cargado
+[05-Oct-2022 18:32:32 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:32:32 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:32:45 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:32:45 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:32:45 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:32:45 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:32:45 Europe/Berlin] PHP Fatal error:  Uncaught Error: Class "SuccesserMessages" not found in C:\xampp\htdocs\mvcproject.com\libs\view.php:38
+Stack trace:
+#0 C:\xampp\htdocs\mvcproject.com\libs\view.php(22): View->handleSuccess()
+#1 C:\xampp\htdocs\mvcproject.com\libs\view.php(14): View->handleMessages()
+#2 C:\xampp\htdocs\mvcproject.com\controllers\loginController.php(11): View->render('login')
+#3 C:\xampp\htdocs\mvcproject.com\libs\app.php(73): LoginController->loadView()
+#4 C:\xampp\htdocs\mvcproject.com\libs\app.php(13): App->redirectLogin()
+#5 C:\xampp\htdocs\mvcproject.com\index.php(15): App->__construct()
+#6 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\libs\view.php on line 38
+[05-Oct-2022 18:34:23 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:23 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:33 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:33 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:34 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:34 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:35 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:35 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:44 Europe/Berlin] PHP Warning:  require_once(C:\xampp\php\pear): Failed to open stream: Permission denied in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:34:44 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required '' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:55 Europe/Berlin] PHP Warning:  require_once(classes/successMesage.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:55 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMesage.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:56 Europe/Berlin] PHP Warning:  require_once(classes/successMesage.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:56 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMesage.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:57 Europe/Berlin] PHP Warning:  require_once(classes/successMesage.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMesage.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:57 Europe/Berlin] PHP Warning:  require_once(classes/successMesage.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:35:57 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMesage.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:36:21 Europe/Berlin] PHP Warning:  require_once(classes/successMessages.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:36:21 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMessages.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:36:22 Europe/Berlin] PHP Warning:  require_once(classes/successMessages.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:36:22 Europe/Berlin] PHP Fatal error:  Uncaught Error: Failed opening required 'classes/successMessages.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\mvcproject.com\index.php:9
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\mvcproject.com\index.php on line 9
+[05-Oct-2022 18:36:58 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:36:58 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:36:58 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:36:58 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:37:02 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:37:02 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:37:02 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:37:02 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:37:38 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:37:38 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:37:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:37:38 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:41:08 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:41:08 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:41:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:41:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:01 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:01 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:01 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:01 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:08 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:08 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:08 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:08 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:16 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:16 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:16 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:16 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:24 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:24 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:24 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:24 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:33 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:33 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:33 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:33 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:33 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:33 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:34 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:34 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:34 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:34 Europe/Berlin] VIEW::CONSTRUCT=>OK
+[05-Oct-2022 18:43:38 Europe/Berlin] APP::constructor=>No se especifico controlador
+[05-Oct-2022 18:43:38 Europe/Berlin] LOGIN::CONSTRUCT=>Login cargado
+[05-Oct-2022 18:43:38 Europe/Berlin] CONTROLLER::CONSTRUCT=>OK
+[05-Oct-2022 18:43:38 Europe/Berlin] VIEW::CONSTRUCT=>OK

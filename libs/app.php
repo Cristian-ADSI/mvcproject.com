@@ -11,14 +11,14 @@ class App
         // No se especifico controlador en la url 
         if (empty($url[0])) {
             $this->redirectLogin();
-            return false;
+            return;
         }
 
-        // No existe el controlador a cargar
+        // No existe el controlador especificado
         $fileController = "controllers/$url[0].php";
         if (!file_exists($fileController)) {
-            # 404 page.
-            // return false 
+            $this->redirectErrors();
+            return;
         }
 
         // TODO:: scar esto de aqui 
@@ -30,16 +30,16 @@ class App
         // ------------------------------
         $controller->loadModel($model);
 
-        //No hay metodo a cargar
+        //No se especifico metodo en la url
         $method = isset($url[1]) ? $url[1] : null;
         if (is_null($method)) {
             $controller->loadView();
             return;
         }
 
-        //No existe el metodo en la clase
+        //No existe el metodo especificado
         if (method_exists($controller, $method)) {
-            $controller->loadView();
+            $this->redirectErrors();
             return;
         }
 
@@ -63,14 +63,24 @@ class App
 
     private function redirectLogin()
     {
-        error_log("APP::constructor=>Controller not especified");
+        error_log("APP::constructor=>No se especifico controlador");
 
         $fileController = 'controllers/loginController.php';
-
         require_once $fileController;
 
         $controller = new LoginController();
         $controller->loadModel('login');
-        $controller->loadView();    
+        $controller->loadView();
+    }
+
+    private function redirectErrors()
+    {
+        error_log("APP::constructor=>No existe el controlador especificado");
+
+        $fileController = 'controllers/errorsController.php';
+        require_once $fileController;
+
+        $controller = new ErrorsController();
+        $controller->loadView();
     }
 }
